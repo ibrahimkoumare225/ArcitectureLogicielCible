@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e123b238-ac53-4b5a-83eb-5ad3c0da8dd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ETAB v1.3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/etabv1_3/IEducation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/etabv1_3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/IEleveDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/IProfesseurDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/IUtilisateurDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/SingletonDataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/impl/EleveDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/impl/ProfesseurDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/impl/UtilisateurDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Eleve.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Professeur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Utilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/IEleveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/IProfesseurService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/IUtilisateurService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/impl/EleveServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/impl/ProfesseurServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/impl/UtilisateurServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="e123b238-ac53-4b5a-83eb-5ad3c0da8dd5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +40,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -84,7 +58,7 @@
       <workItem from="1723379970403" duration="8784000" />
       <workItem from="1723469857714" duration="11298000" />
       <workItem from="1723538163572" duration="3300000" />
-      <workItem from="1723552142520" duration="12042000" />
+      <workItem from="1723552142520" duration="14500000" />
     </task>
     <servers />
   </component>
