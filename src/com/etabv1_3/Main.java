@@ -3,15 +3,14 @@ package com.etabv1_3;
 import models.Eleve;
 import models.Professeur;
 import models.Utilisateur;
-import services.IUtilisateurService;
-import services.impl.UtilisateurServiceImpl;
+
 
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-    static Eleve eleve = new Eleve(0,"","","","","","","");
+    static Eleve eleve = new Eleve();
     static Professeur prof = new Professeur(true,"","","");
     static Utilisateur utili = new Utilisateur();
     public static void main(String[] args) throws SQLException {
@@ -30,7 +29,7 @@ public class Main {
                 "******************************************************\n\n" +"                                      "+
                 "C0NNEXION\n\n");
     }
-    public static void afficherMenu(){
+    public static void afficherMenu() throws SQLException {
 
         Scanner choix = new Scanner(System.in);
         System.out.println("               " +
@@ -48,7 +47,7 @@ public class Main {
                 quitter();
                 break;
             case 1:
-                //eleve.afficherMenuGestionEleves();
+                eleve.afficherMenuGestionEleves();
                 break;
             case 2:
                // prof.afficherMenu();

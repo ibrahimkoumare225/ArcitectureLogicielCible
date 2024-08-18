@@ -1,7 +1,9 @@
 package models;
 
 import dao.IEleveDAO;
+import services.impl.EleveServiceImpl;
 
+import java.sql.SQLException;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,17 +18,20 @@ public class Eleve extends Personne {
     private static Instant debutSession = Instant.now();
     private String classe;
     private String matricule;
+    EleveServiceImpl eleveSI = new EleveServiceImpl();
 
+     Eleve eleve ;
     public Eleve(int id, String dateNaissance, String ville, String prenom, String nom, String telephone, String classe, String matricule) {
         super(id, dateNaissance, ville, prenom, nom, telephone);
         this.classe = classe;
         this.matricule = matricule;
     }
 
-    public Eleve(String classe, String matricule) {
-        this.classe = classe;
-        this.matricule = matricule;
+    public Eleve() {
+        this.classe = "";
+        this.matricule = "";
     }
+
 
     public String getClasse() {
         return classe;
@@ -44,6 +49,56 @@ public class Eleve extends Personne {
         this.matricule = matricule;
     }
 
-    public void afficherMenuGestionEleves(){}
+    public void afficherMenuGestionEleves() throws SQLException {
+        int choix;
+
+        do {
+            System.out.println("     * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n" +
+                    "     GESTION DES ELEVES \n" +
+                    "     * * * * * * * * * * * * * * * * * * * * * * * * * * * * \n" +
+                    "\n\n" +
+                    "  MENU: \n\n" +
+                    "    1: Ajouter un élève \n" +
+                    "    2: Supprimer un élève \n" +
+                    "    3: Modifier les informations de l'élève\n" +
+                    "    4: Lister les élèves \n" +
+                    "    5: Obtenir le dernier élève ajouté \n" +
+                    "    6: Retour \n" +
+                    "    0: Quitter\n");
+
+            choix = champ.nextInt();
+
+            switch (choix) {
+                case 1:
+                    eleveSI.save(eleve);
+                    break;
+                case 2:
+                    System.out.print("Veuillez entrer l'ID de l'élève à supprimer : ");
+                  /*  int idASupprimer = scanner.nextInt();
+                    scanner.nextLine();
+                   supprimer(idASupprimer);
+                   */ break;
+                case 3:
+                   // modifier(null);
+                    break;
+                case 4:
+                  //  obtenirEleves(); // Appeler la méthode obtenirEleves pour lister les élèves
+                    break;
+                case 5:
+                  //  obtenirDernierEleveAjoute();
+                    break;
+                case 6:
+                  //  new MenuPrincipal().afficherMenu(); // Retourner au menu principal
+                    break;
+                case 0:
+                    quitter();
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Choix invalide.");
+            }
+        } while (choix != 0&&choix != 1&&choix != 2&&choix != 3&&choix != 4&&choix != 5&&choix != 6);
+    }
+
 
 }
